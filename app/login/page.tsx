@@ -62,7 +62,7 @@ export default function LoginPage() {
           <div className="max-w-md w-full space-y-8">
             <div>
               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                Staff Login
+                 Login to Account
               </h2>
             </div>
             <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -125,3 +125,56 @@ export default function LoginPage() {
     </div>
   );
 }
+
+
+// 'use client';
+
+// import React from 'react';
+// import { signIn } from 'next-auth/react';
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import { Utensils } from 'lucide-react';
+
+// export default function LoginPage() {
+//   return (
+//     <div className="bg-white">
+//       <Link href="/" className="flex items-center space-x-2 pl-4">
+//         <Utensils className="w-8 h-14 text-emerald-500 transition-transform group-hover:rotate-12" />
+//         <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-emerald-500 text-transparent bg-clip-text">NutriCare</span>
+//       </Link>
+//       <div className="min-h-screen flex">
+//         {/* Left Section: Image */}
+//         <div className="hidden md:block md:w-3/5 items-center justify-center bg-white">
+//           <div className="relative w-3/4 h-5/6">
+//             <Image
+//               src="https://cdn.dribbble.com/users/3995683/screenshots/7948918/media/8264264ae03b6905ca67a4fa690b360b.png?resize=1200x900&vertical=center"
+//               alt="Hospital Illustration"
+//               layout="fill"
+//               objectFit="cover"
+//               className="rounded-full"
+//             />
+//           </div>
+//         </div>
+
+//         {/* Right Section: Google Sign-In */}
+//         <div className="w-full md:w-2/5 flex items-center justify-center bg-white px-10 border-l border-slate-300">
+//           <div className="max-w-md w-full space-y-8">
+//             <div>
+//               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+//                 Sign in to Your Account
+//               </h2>
+//             </div>
+//             <div className="mt-8 space-y-6">
+//               <button
+//                 onClick={() => signIn('google')}
+//                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-150 ease-in-out"
+//               >
+//                 Sign in with Google
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

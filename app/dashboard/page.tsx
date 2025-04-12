@@ -16,13 +16,13 @@ export default function DashboardPage() {
           <div className="flex items-center space-x-2">
             <FaBell className="h-6 w-6 text-red-500" />
             <span className="text-lg font-semibold text-gray-700">
-              2 Delayed Deliveries
+              <Link href="/delay">2 Delayed Deliveries</Link>
             </span>
           </div>
           <div className="flex items-center space-x-2">
             <FaClipboardList className="h-6 w-6 text-yellow-500" />
             <span className="text-lg font-semibold text-gray-700">
-              5 Meals in Progress
+              6 Meals in Progress
             </span>
           </div>
         </div>
@@ -50,18 +50,28 @@ export default function DashboardPage() {
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
             <h2 className="text-xl font-semibold text-gray-800">Pantry Management</h2>
             <p className="mt-2 text-sm text-gray-600">Manage pantry staff, Meal preparation tasks, and delivery assignments.</p>
-            <Link href="/pantry">
+            <Link href="/pantrystaff">
               <button className="mt-4 text-blue-600 hover:text-blue-800">Manage Pantry</button>
             </Link>
           </div>
 
-          {/* Alerts */}
+          {/* notify */}
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <h2 className="text-xl font-semibold text-gray-800">Alerts</h2>
+            <h2 className="text-xl font-semibold text-gray-800">Notify</h2>
             <p className="mt-2 text-sm text-gray-600">Monitor any issues or delays in meal preparation and delivery.</p>
-            <Link href="/alerts">
-              <button className="mt-4 text-blue-600 hover:text-blue-800">View Alerts</button>
+            <Link href="/notification">
+              <button className="mt-4 text-blue-600 hover:text-blue-800">View for Notify</button>
             </Link>
+          </div>
+
+          {/* Patient Record */}
+          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <h2 className="text-xl font-semibold text-gray-800">Patient Record data</h2>
+            <p className="mt-2 text-sm text-gray-600">Monitor the data of the added patients.</p>
+            <Link href="/patient-data">
+              <button className="mt-4 text-blue-600 hover:text-blue-800">View patients</button>
+            </Link>
+            
           </div>
         </div>
       </div>

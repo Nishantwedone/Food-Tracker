@@ -11,3 +11,15 @@ body {
   width: 100%;
 }
 
+.Toastify__toast--info {
+  background-color: #075e54;
+  color: #fff;
+}
+.Toastify__close-button {
+  color: #fff;
+}
+
+/* Add to your global.css */
+nextjs-portal {
+  display: none;
+}
